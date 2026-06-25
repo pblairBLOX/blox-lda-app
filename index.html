@@ -1189,7 +1189,7 @@ function setLang(l) {
    ============================================================ */
 const S = {
   role: null, lang: 'en', page: 'home', prevPage: null,
-  currentSession: 9, activeTab: 'overview',
+  currentSession: 1, activeTab: 'overview',
   hwFilter: 'all', hwStudent: 'all', quizUnitFilter: 0,
   adminTab: 'sessions', adminQuiz: null, adminQuestion: null,
   quiz: { active: null, qidx: 0, answered: false, choice: null, correct: 0, wrong: 0, done: false },
@@ -1205,28 +1205,28 @@ const SEMESTER_CONFIG = {
   "name": "Semester 1",
   "nameEs": "Semestre 1",
   "year": "2026",
-  "currentWeek": 9,
-  "repoUrl": "https://bloxacpublic.github.io/Blox_LDA/",
-  "status": { "1":"complete","2":"complete","3":"complete","4":"complete","5":"complete","6":"complete","7":"complete","8":"complete","9":"current","10":"available","11":"locked","12":"locked","13":"locked","14":"locked","15":"locked","16":"locked" },
-  "cohort": null,
+  "currentWeek": 1,
+  "repoUrl": "https://pblairblox.github.io/blox-lda-app/",
+  "status": { "1":"available","2":"locked","3":"locked","4":"locked","5":"locked","6":"locked","7":"locked","8":"locked","9":"locked","10":"locked","11":"locked","12":"locked","13":"locked","14":"locked","15":"locked","16":"locked" },
+  "cohort": [],
   "slidesUrls": {
-    "1": "https://gastudio.sharepoint.com/:f:/s/TheHub/IgD5RyA1pYesTo5OizX948JTAdwjZGwtU0la7AgtAk9JvKE?e=uVegXh",
-    "2": "https://gastudio.sharepoint.com/:f:/s/TheHub/IgD5RyA1pYesTo5OizX948JTAdwjZGwtU0la7AgtAk9JvKE?e=uVegXh",
-    "3": "https://gastudio.sharepoint.com/:f:/s/TheHub/IgD5RyA1pYesTo5OizX948JTAdwjZGwtU0la7AgtAk9JvKE?e=uVegXh",
-    "4": "https://gastudio.sharepoint.com/:f:/s/TheHub/IgD5RyA1pYesTo5OizX948JTAdwjZGwtU0la7AgtAk9JvKE?e=uVegXh",
-    "5": "https://gastudio.sharepoint.com/:f:/s/TheHub/IgD5RyA1pYesTo5OizX948JTAdwjZGwtU0la7AgtAk9JvKE?e=uVegXh",
-    "6": "https://gastudio.sharepoint.com/:f:/s/TheHub/IgD5RyA1pYesTo5OizX948JTAdwjZGwtU0la7AgtAk9JvKE?e=uVegXh",
-    "7": "https://gastudio.sharepoint.com/:f:/s/TheHub/IgD5RyA1pYesTo5OizX948JTAdwjZGwtU0la7AgtAk9JvKE?e=uVegXh",
-    "8": "https://gastudio.sharepoint.com/:f:/s/TheHub/IgD5RyA1pYesTo5OizX948JTAdwjZGwtU0la7AgtAk9JvKE?e=uVegXh",
-    "9": "https://gastudio.sharepoint.com/:f:/s/TheHub/IgD5RyA1pYesTo5OizX948JTAdwjZGwtU0la7AgtAk9JvKE?e=uVegXh",
-    "10": "https://gastudio.sharepoint.com/:f:/s/TheHub/IgD5RyA1pYesTo5OizX948JTAdwjZGwtU0la7AgtAk9JvKE?e=uVegXh",
-    "11": "https://gastudio.sharepoint.com/:f:/s/TheHub/IgD5RyA1pYesTo5OizX948JTAdwjZGwtU0la7AgtAk9JvKE?e=uVegXh",
-    "12": "https://gastudio.sharepoint.com/:f:/s/TheHub/IgD5RyA1pYesTo5OizX948JTAdwjZGwtU0la7AgtAk9JvKE?e=uVegXh",
-    "13": "https://gastudio.sharepoint.com/:f:/s/TheHub/IgD5RyA1pYesTo5OizX948JTAdwjZGwtU0la7AgtAk9JvKE?e=uVegXh",
-    "14": "https://gastudio.sharepoint.com/:f:/s/TheHub/IgD5RyA1pYesTo5OizX948JTAdwjZGwtU0la7AgtAk9JvKE?e=uVegXh",
-    "15": "https://gastudio.sharepoint.com/:f:/s/TheHub/IgD5RyA1pYesTo5OizX948JTAdwjZGwtU0la7AgtAk9JvKE?e=uVegXh",
-    "16": "https://gastudio.sharepoint.com/:f:/s/TheHub/IgD5RyA1pYesTo5OizX948JTAdwjZGwtU0la7AgtAk9JvKE?e=uVegXh"
-  }
+  "1": "https://gastudio.sharepoint.com/:f:/s/TheHub/IgD5RyA1pYesTo5OizX948JTAdwjZGwtU0la7AgtAk9JvKE?e=uVegXh",
+  "2": "https://gastudio.sharepoint.com/:f:/s/TheHub/IgD5RyA1pYesTo5OizX948JTAdwjZGwtU0la7AgtAk9JvKE?e=uVegXh",
+  "3": "https://gastudio.sharepoint.com/:f:/s/TheHub/IgD5RyA1pYesTo5OizX948JTAdwjZGwtU0la7AgtAk9JvKE?e=uVegXh",
+  "4": "https://gastudio.sharepoint.com/:f:/s/TheHub/IgD5RyA1pYesTo5OizX948JTAdwjZGwtU0la7AgtAk9JvKE?e=uVegXh",
+  "5": "https://gastudio.sharepoint.com/:f:/s/TheHub/IgD5RyA1pYesTo5OizX948JTAdwjZGwtU0la7AgtAk9JvKE?e=uVegXh",
+  "6": "https://gastudio.sharepoint.com/:f:/s/TheHub/IgD5RyA1pYesTo5OizX948JTAdwjZGwtU0la7AgtAk9JvKE?e=uVegXh",
+  "7": "https://gastudio.sharepoint.com/:f:/s/TheHub/IgD5RyA1pYesTo5OizX948JTAdwjZGwtU0la7AgtAk9JvKE?e=uVegXh",
+  "8": "https://gastudio.sharepoint.com/:f:/s/TheHub/IgD5RyA1pYesTo5OizX948JTAdwjZGwtU0la7AgtAk9JvKE?e=uVegXh",
+  "9": "https://gastudio.sharepoint.com/:f:/s/TheHub/IgD5RyA1pYesTo5OizX948JTAdwjZGwtU0la7AgtAk9JvKE?e=uVegXh",
+  "10": "https://gastudio.sharepoint.com/:f:/s/TheHub/IgD5RyA1pYesTo5OizX948JTAdwjZGwtU0la7AgtAk9JvKE?e=uVegXh",
+  "11": "https://gastudio.sharepoint.com/:f:/s/TheHub/IgD5RyA1pYesTo5OizX948JTAdwjZGwtU0la7AgtAk9JvKE?e=uVegXh",
+  "12": "https://gastudio.sharepoint.com/:f:/s/TheHub/IgD5RyA1pYesTo5OizX948JTAdwjZGwtU0la7AgtAk9JvKE?e=uVegXh",
+  "13": "https://gastudio.sharepoint.com/:f:/s/TheHub/IgD5RyA1pYesTo5OizX948JTAdwjZGwtU0la7AgtAk9JvKE?e=uVegXh",
+  "14": "https://gastudio.sharepoint.com/:f:/s/TheHub/IgD5RyA1pYesTo5OizX948JTAdwjZGwtU0la7AgtAk9JvKE?e=uVegXh",
+  "15": "https://gastudio.sharepoint.com/:f:/s/TheHub/IgD5RyA1pYesTo5OizX948JTAdwjZGwtU0la7AgtAk9JvKE?e=uVegXh",
+  "16": "https://gastudio.sharepoint.com/:f:/s/TheHub/IgD5RyA1pYesTo5OizX948JTAdwjZGwtU0la7AgtAk9JvKE?e=uVegXh"
+}
 };
 /* ===== BLOX_LDA_SEMESTER_CONFIG_END ===== */
 
@@ -1245,16 +1245,16 @@ const UNITS = [
 ];
 
 const SESSIONS_DATA = [
-  { week:1,  title:'Orientation & Cohort Kickoff',              titleEs:'Orientación y Bienvenida',                   presenter:'LDA Program Leadership', presEs:'Liderazgo LDA', unit:1, status:'complete' },
-  { week:2,  title:'The Law of the Lid',                        titleEs:'La Ley del Límite',                          presenter:'Anthony R.',              presEs:'Anthony R.',     unit:1, status:'complete' },
-  { week:3,  title:'Leadership Foundations — Part 1',           titleEs:'Fundamentos de Liderazgo — Parte 1',         presenter:'Derek Anthony',           presEs:'Derek Anthony',  unit:1, status:'complete' },
-  { week:4,  title:'Leadership Foundations — Part 2',           titleEs:'Fundamentos de Liderazgo — Parte 2',         presenter:'Derek Anthony',           presEs:'Derek Anthony',  unit:1, status:'complete' },
-  { week:5,  title:'Leadership Styles & Situational Leadership',titleEs:'Estilos y Liderazgo Situacional',            presenter:'Lee Hargreave',           presEs:'Lee Hargreave',  unit:1, status:'complete' },
-  { week:6,  title:'Understanding Culture',                     titleEs:'Entendiendo la Cultura',                     presenter:'Lawrence M.',             presEs:'Lawrence M.',    unit:2, status:'complete' },
-  { week:7,  title:'Changing Culture Through Leadership',       titleEs:'Cambio Cultural a través del Liderazgo',     presenter:'D. Baker',                presEs:'D. Baker',       unit:2, status:'complete' },
-  { week:8,  title:'Lean MFG Culture + Lean Leadership',        titleEs:'Cultura Lean + Liderazgo Lean',              presenter:'M. Lehr / J. Samuelson',  presEs:'M. Lehr / J. Samuelson', unit:2, status:'complete' },
-  { week:9,  title:'Continuous Improvement & the 8 Wastes',    titleEs:'Mejora Continua y los 8 Desperdicios',       presenter:'K. Pavlov',               presEs:'K. Pavlov',      unit:3, status:'current' },
-  { week:10, title:'Problem Solving & The Gemba',               titleEs:'Resolución de Problemas y el Gemba',         presenter:'N. Marinelli',            presEs:'N. Marinelli',   unit:3, status:'available' },
+  { week:1,  title:'Orientation & Cohort Kickoff',              titleEs:'Orientación y Bienvenida',                   presenter:'LDA Program Leadership', presEs:'Liderazgo LDA', unit:1, status:'available' },
+  { week:2,  title:'The Law of the Lid',                        titleEs:'La Ley del Límite',                          presenter:'Anthony R.',              presEs:'Anthony R.',     unit:1, status:'locked' },
+  { week:3,  title:'Leadership Foundations — Part 1',           titleEs:'Fundamentos de Liderazgo — Parte 1',         presenter:'Derek Anthony',           presEs:'Derek Anthony',  unit:1, status:'locked' },
+  { week:4,  title:'Leadership Foundations — Part 2',           titleEs:'Fundamentos de Liderazgo — Parte 2',         presenter:'Derek Anthony',           presEs:'Derek Anthony',  unit:1, status:'locked' },
+  { week:5,  title:'Leadership Styles & Situational Leadership',titleEs:'Estilos y Liderazgo Situacional',            presenter:'Lee Hargreave',           presEs:'Lee Hargreave',  unit:1, status:'locked' },
+  { week:6,  title:'Understanding Culture',                     titleEs:'Entendiendo la Cultura',                     presenter:'Lawrence M.',             presEs:'Lawrence M.',    unit:2, status:'locked' },
+  { week:7,  title:'Changing Culture Through Leadership',       titleEs:'Cambio Cultural a través del Liderazgo',     presenter:'D. Baker',                presEs:'D. Baker',       unit:2, status:'locked' },
+  { week:8,  title:'Lean MFG Culture + Lean Leadership',        titleEs:'Cultura Lean + Liderazgo Lean',              presenter:'M. Lehr / J. Samuelson',  presEs:'M. Lehr / J. Samuelson', unit:2, status:'locked' },
+  { week:9,  title:'Continuous Improvement & the 8 Wastes',    titleEs:'Mejora Continua y los 8 Desperdicios',       presenter:'K. Pavlov',               presEs:'K. Pavlov',      unit:3, status:'locked' },
+  { week:10, title:'Problem Solving & The Gemba',               titleEs:'Resolución de Problemas y el Gemba',         presenter:'N. Marinelli',            presEs:'N. Marinelli',   unit:3, status:'locked' },
   { week:11, title:'EHS: Leadership Is the System',             titleEs:'EHS: El Liderazgo Es el Sistema',            presenter:'John B.',                 presEs:'John B.',        unit:3, status:'locked' },
   { week:12, title:'Results-Driven Communication',              titleEs:'Comunicación Orientada a Resultados',        presenter:'J. Samuelson',            presEs:'J. Samuelson',   unit:4, status:'locked' },
   { week:13, title:'Giving Feedback That Works',                titleEs:'Retroalimentación Efectiva',                 presenter:'Jennifer S.',             presEs:'Jennifer S.',    unit:4, status:'locked' },
@@ -2294,81 +2294,65 @@ const HW_DATA = [
     "week": 1,
     "title": "Leadership Story",
     "titleEs": "Historia de Liderazgo",
-    "status": "graded",
-    "grade": "5/5",
+    "status": "pending",
     "assignment": "Write a one-paragraph leadership story — describe a time someone's leadership (good or bad) changed your outcome at work. What did they do? What was the impact? Bring it to Week 2.",
-    "assignmentEs": "Escribe una historia de liderazgo de un párrafo — describe una vez en que el liderazgo de alguien (bueno o malo) cambió tu resultado en el trabajo. ¿Qué hizo? ¿Cuál fue el impacto? Tráela a la Semana 2.",
-    "feedback": "A vivid, honest story with a clear cause-and-effect. You named the specific behaviors that made the difference, which is exactly the reflection habit this program is building."
+    "assignmentEs": "Escribe una historia de liderazgo de un párrafo — describe una vez en que el liderazgo de alguien (bueno o malo) cambió tu resultado en el trabajo. ¿Qué hizo? ¿Cuál fue el impacto? Tráela a la Semana 2."
   },
   {
     "week": 2,
     "title": "Lid Assessment",
     "titleEs": "Evaluación del Límite",
-    "status": "graded",
-    "grade": "4/5",
+    "status": "pending",
     "assignment": "Choose ONE of the six lid-raising strategies (Study Leadership, Develop Communication, Become a Developer of People, Gain Experience, Learn from Others, Embrace Challenges). Commit to one specific action this week. Write it down and report back at Week 3.",
-    "assignmentEs": "Elige UNA de las seis estrategias para elevar tu límite (Estudiar el Liderazgo, Desarrollar la Comunicación, Formar Personas, Ganar Experiencia, Aprender de Otros, Aceptar Retos). Comprométete a una acción específica esta semana y repórtala en la Semana 3.",
-    "feedback": "Good choice of 'Develop Communication Skills' as your focus area. Your commitment (no interrupting in team meetings for two weeks) was measurable and actionable. Next time, add how you will check whether it worked."
+    "assignmentEs": "Elige UNA de las seis estrategias para elevar tu límite (Estudiar el Liderazgo, Desarrollar la Comunicación, Formar Personas, Ganar Experiencia, Aprender de Otros, Aceptar Retos). Comprométete a una acción específica esta semana y repórtala en la Semana 3."
   },
   {
     "week": 3,
     "title": "Circle of Influence Plan",
     "titleEs": "Plan del Círculo de Influencia",
-    "status": "graded",
-    "grade": "4/5",
+    "status": "pending",
     "assignment": "Identify one issue in your area where you have been reactive (Circle of Concern). Write a three-sentence plan for how you will approach it proactively next week using only the levers within your Circle of Influence.",
-    "assignmentEs": "Identifica un problema de tu área en el que has sido reactivo (Círculo de Preocupación). Escribe un plan de tres oraciones para abordarlo de forma proactiva la próxima semana usando solo las palancas de tu Círculo de Influencia.",
-    "feedback": "You correctly separated what you can control from what you cannot. The plan was concrete. Watch the temptation to slip back into the concern column when the fix takes longer than expected."
+    "assignmentEs": "Identifica un problema de tu área en el que has sido reactivo (Círculo de Preocupación). Escribe un plan de tres oraciones para abordarlo de forma proactiva la próxima semana usando solo las palancas de tu Círculo de Influencia."
   },
   {
     "week": 4,
     "title": "Delegate a Task",
     "titleEs": "Delegar una Tarea",
-    "status": "graded",
-    "grade": "3/5",
+    "status": "pending",
     "assignment": "Delegate one real task this week using the principles from the session. Brief the person clearly, explain why you chose them, and set a check-in point. Report on how it went at Week 5.",
-    "assignmentEs": "Delega una tarea real esta semana usando los principios de la sesión. Da instrucciones claras, explica por qué elegiste a esa persona y fija un punto de seguimiento. Reporta cómo te fue en la Semana 5.",
-    "feedback": "You delegated, which is the hard first step. The brief was a little thin on the 'why them' and the check-in came late. Tighten those two and the next delegation will land much better."
+    "assignmentEs": "Delega una tarea real esta semana usando los principios de la sesión. Da instrucciones claras, explica por qué elegiste a esa persona y fija un punto de seguimiento. Reporta cómo te fue en la Semana 5."
   },
   {
     "week": 5,
     "title": "Leadership Style Practice",
     "titleEs": "Práctica de Estilo de Liderazgo",
-    "status": "graded",
-    "grade": "5/5",
+    "status": "pending",
     "assignment": "Over the next two weeks, deliberately practice a leadership style you rarely use. Document the situation, the style you used, and what happened. Bring your observations to Unit 2.",
-    "assignmentEs": "Durante las próximas dos semanas, practica deliberadamente un estilo de liderazgo que rara vez usas. Documenta la situación, el estilo que usaste y qué pasó. Trae tus observaciones a la Unidad 2.",
-    "feedback": "Excellent application of the Democratic style in your safety review. Your self-reflection was specific and honest about what felt uncomfortable. This is exactly the growth work we want to see."
+    "assignmentEs": "Durante las próximas dos semanas, practica deliberadamente un estilo de liderazgo que rara vez usas. Documenta la situación, el estilo que usaste y qué pasó. Trae tus observaciones a la Unidad 2."
   },
   {
     "week": 6,
     "title": "Cultural Moments",
     "titleEs": "Momentos Culturales",
-    "status": "graded",
-    "grade": "4/5",
+    "status": "pending",
     "assignment": "Write down three cultural moments you witnessed this week — specific behaviors or interactions that reflect the culture you have. Then write three you wish you had seen that would reflect the culture you want. Bring both lists to Week 7.",
-    "assignmentEs": "Anota tres momentos culturales que presenciaste esta semana — comportamientos o interacciones específicas que reflejan la cultura que tienes. Luego escribe tres que te hubiera gustado ver y que reflejarían la cultura que quieres. Trae ambas listas a la Semana 7.",
-    "feedback": "Strong observation. The contrast between the culture you have and the one you want was clear and specific. The next step is turning one of those 'wish' moments into a behavior you model yourself."
+    "assignmentEs": "Anota tres momentos culturales que presenciaste esta semana — comportamientos o interacciones específicas que reflejan la cultura que tienes. Luego escribe tres que te hubiera gustado ver y que reflejarían la cultura que quieres. Trae ambas listas a la Semana 7."
   },
   {
     "week": 7,
     "title": "Culture Gap Analysis",
     "titleEs": "Análisis de Brechas Culturales",
-    "status": "graded",
-    "grade": "4/5",
+    "status": "pending",
     "assignment": "Baker says what leaders tolerate becomes the standard. Identify one thing you currently tolerate in your area that contradicts the culture you want. Write a clear, respectful response you will use the next time it occurs — then use it.",
-    "assignmentEs": "Baker dice que lo que los líderes toleran se vuelve el estándar. Identifica algo que toleras actualmente en tu área que contradice la cultura que quieres. Escribe una respuesta clara y respetuosa que usarás la próxima vez que ocurra — y luego úsala.",
-    "feedback": "Strong self-awareness and specific language. Your planned response was direct without being punitive. Follow up with the employee on how the conversation landed."
+    "assignmentEs": "Baker dice que lo que los líderes toleran se vuelve el estándar. Identifica algo que toleras actualmente en tu área que contradice la cultura que quieres. Escribe una respuesta clara y respetuosa que usarás la próxima vez que ocurra — y luego úsala."
   },
   {
     "week": 8,
     "title": "Lean Pitfall Fix",
     "titleEs": "Corrección de Error Lean",
-    "status": "graded",
-    "grade": "5/5",
+    "status": "pending",
     "assignment": "Identify one pitfall in your area (focusing on tools not behavior, ignoring the system, skipping gemba, failing to coach, rewarding the wrong things). Plan one corrective leadership action and execute it this week.",
-    "assignmentEs": "Identifica un error común en tu área (enfocarte en herramientas y no en comportamientos, ignorar el sistema, saltarte el gemba, no entrenar, recompensar lo incorrecto). Planea una acción correctiva de liderazgo y ejecútala esta semana.",
-    "feedback": "Sharp catch: you were rewarding firefighting over prevention. Changing how you give recognition in the huddle is a small lever with a big cultural payoff. Keep watching what behavior your praise actually reinforces."
+    "assignmentEs": "Identifica un error común en tu área (enfocarte en herramientas y no en comportamientos, ignorar el sistema, saltarte el gemba, no entrenar, recompensar lo incorrecto). Planea una acción correctiva de liderazgo y ejecútala esta semana."
   },
   {
     "week": 9,
@@ -3544,16 +3528,7 @@ function renderSemester() {
    ============================================================ */
 /* ---- Facilitator roster + per-student records (showcase data) ---- */
 /* ---- Cohort data (8 simulated participants) ---- */
-const COHORT_DATA = [
-  { id:'jt', name:'J. Thompson',  initials:'JT', sessionsComplete:8, hwSubmitted:8, quizAvg:88, lastActivity:2 },
-  { id:'ml', name:'M. Lewis',     initials:'ML', sessionsComplete:8, hwSubmitted:9, quizAvg:92, lastActivity:5 },
-  { id:'rg', name:'R. Gutierrez', initials:'RG', sessionsComplete:7, hwSubmitted:7, quizAvg:76, lastActivity:9 },
-  { id:'tw', name:'T. Washington',initials:'TW', sessionsComplete:8, hwSubmitted:8, quizAvg:84, lastActivity:14 },
-  { id:'sc', name:'S. Chen',      initials:'SC', sessionsComplete:6, hwSubmitted:6, quizAvg:80, lastActivity:20 },
-  { id:'ar', name:'A. Rodriguez', initials:'AR', sessionsComplete:5, hwSubmitted:5, quizAvg:68, lastActivity:28 },
-  { id:'kw', name:'K. Williams',  initials:'KW', sessionsComplete:7, hwSubmitted:8, quizAvg:90, lastActivity:33 },
-  { id:'dp', name:'D. Patterson', initials:'DP', sessionsComplete:4, hwSubmitted:4, quizAvg:72, lastActivity:46 },
-];
+const COHORT_DATA = []; // Populated via Admin → Semester Control
 const STUDENTS = COHORT_DATA.map(c => c.name);
 const HW_RESPONSES = [
   "I walked my area at the start of shift and noticed we were re-staging the same fixtures twice. I changed the cart layout so the next process gets them in sequence.",
@@ -4848,7 +4823,7 @@ function applySemesterConfig() {
   if (cfg.status) SESSIONS_DATA.forEach(s => { if (cfg.status[s.week]) s.status = cfg.status[s.week]; });
   if (cfg.currentWeek) S.currentSession = cfg.currentWeek;
 
-  if (Array.isArray(cfg.cohort) && cfg.cohort.length) {
+  if (Array.isArray(cfg.cohort)) {
     COHORT_DATA.length = 0;
     cfg.cohort.forEach(c => COHORT_DATA.push({
       id: c.id || ('p' + Math.random().toString(36).slice(2)),
